@@ -13,7 +13,7 @@ if not api_key:
     st.stop()
 
 
-genai.configure(api_key=api_key)
+genai.configure(api_key=st.secrets["GENAI_API_KEY"])
 
 # Set up the model
 generation_config = {
