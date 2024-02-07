@@ -10,6 +10,8 @@ from io import BytesIO
 
 load_dotenv()
 
+st.set_page_config(page_title="Mental Support Chatbot")
+
 api_key = os.getenv("GENAI_API_KEY")
 
 if not api_key:
